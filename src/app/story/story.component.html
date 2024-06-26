@@ -1,0 +1,26 @@
+
+<div class="container-fluid" >
+    <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">STORY NAME AND POINTS</h1>
+    <form [formGroup]="AddStoryForm" (ngSubmit)="onFormSubmit()">
+      <div class="form-group">
+        <input  formControlName="storyName" type="text"  placeholder="Story name" >
+      </div>
+     
+    <div class="form-group">
+    <input  formControlName="storyPoint" type="number"  placeholder=" Story point">
+    </div>
+    
+
+    
+      <button class="btn btn-primary"  type="submit" >ADD STORY</button>
+
+      
+    <button class="btn btn-primary"   click="remove()" >CLEAR SPRINTS</button><br>
+    </form>
+
+    
+
+    
+
+   </div>
+
